@@ -4,6 +4,7 @@ import './App.css';
 import User from './User/User';
 import UserDetail from './User/UserDetail';
 import SubComponent from './User/SubComponent';
+import TimeStamp from './User/timestamp';
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
         <UserDetail />
         <p>This is the app Component</p>
         <SubComponent onRender={() => this.whenSubComponentRender()}></SubComponent>
+        <TimeStamp />
       </div>
     );
 
