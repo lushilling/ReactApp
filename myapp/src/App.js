@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 import User from './User/User';
-import UserDetail from './User/UserDetail';
+// import UserDetail from './User/UserDetail';
 import SubComponent from './User/SubComponent';
 import TimeStamp from './User/timestamp';
 
