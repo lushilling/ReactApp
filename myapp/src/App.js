@@ -10,8 +10,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <User />
-        <UserDetail />
+        <User myUser={this.printUser()} />
         <p>This is the app Component</p>
         <SubComponent onRender={() => this.whenSubComponentRender()}></SubComponent>
         <TimeStamp />
@@ -22,7 +21,19 @@ class App extends Component {
   whenSubComponentRender() {
     console.log('sub component rendered');
   }
+  printUser() {
+    let aUser;
+    aUser = {
+      fName: "Lucy",
+      lName: "Shilling",
+      dob: "17/02/1996",
+      city: "Manchester"
+    }
+    return aUser;
+  }
 };
+
+
 
 
 export default App;

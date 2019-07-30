@@ -12,19 +12,24 @@ class TimeStamp extends Component {
     }
 
     addClick() {
-        this.setState({time: new Date()})
+        this.setState(
+            { time: new Date() }
+        )
     }
 
     render() {
         return (
             <div>
-            <button onClick={this.addClick}>Refresh Time Stamp
-            </button>
-
-            <p>{this.state.time.toLocaleTimeString()}</p>
+                <button onClick={ this.addClick }>Refresh Time Stamp</button>
+                <p>The time is: { this.state.time.toLocaleTimeString() }</p>
             </div>
         )
     }
 }
 
 export default TimeStamp;
+
+
+//in constructor only set to new date
+//We can then specify what we want in the render this.state.time 
+//This allows more flexibiltity

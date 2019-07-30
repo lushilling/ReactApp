@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
 
 class UserDetail extends Component {
+    
     render() {
-        return (<p>user detail page works!</p>);
+        return (
+            <div>
+                <p>D.O.B.: {this.props.userData.dob} </p>
+                <p>City: {this.props.userData.city} </p>
+            </div>
+        );
     }
 }
 
